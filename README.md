@@ -39,11 +39,18 @@ $ git commit -m "Donec vel lorem a urna tempor"
 $ git reset --soft HEAD~1
 $ git checkout -b report
 $ git push origin master
+$ git add .
+$ git commit -m "report01"
+$ git log --pretty=format:"%h - %ad - %an - %s" --date=short -20 > git_history.txt
+$ git add .
+$ git commit -m "report02"
+
 ```
 
 
 ### История комитов
 ```
+84b4588 - 2025-11-11 - Artem Bashta - report02
 cc817f6 - 2025-11-11 - Artem Bashta - report01
 9e69bc0 - 2025-11-11 - Artem Bashta - Nulla gravida
 53dfb71 - 2025-11-11 - Artem Bashta - Ut sit amet ipsum non orci tincidunt pharetra
@@ -54,3 +61,8 @@ cc817f6 - 2025-11-11 - Artem Bashta - report01
 c08a654 - 2020-11-21 - Kurtyanik - Файл создан пустым
 3c6e913 - 2020-11-21 - Kurtyanik - Initial commit
 ```
+
+![pic1](pics/pic1)
+![pic2](pics/pic2)
+![pic3](pics/pic3)
+![pic4](pics/pic4)
